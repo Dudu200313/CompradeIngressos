@@ -1,0 +1,18 @@
+{
+  "eventos": [
+    {
+      "tipo": "tipo",
+      "artista": "artista",
+      "data": "data",
+      "sessoes": "sessoes",
+      "id": 1
+    },
+    {
+      "tipo": "tipo2",
+      "artista": "artista2",
+      "data": "2001-03-12",
+      "sessoes": "sessoes2",
+      "id": 2
+    }
+  ]
+}
