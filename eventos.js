@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const eventContainer = document.querySelector('#event-container')
     const eventURL = `http://localhost:3000/eventos`
-    const bookForm = document.querySelector('#event-form')
+    const clientForm = document.querySelector('#event-form')
     
     fetch(`${eventURL}`)
         .then( response => response.json() )
-        .then( bookData => bookData.forEach(function(event) {
+        .then( clientData => clientData.forEach(function(event) {
             eventContainer.innerHTML += `
             <div id=${event.id}>
                 <h2>Tipo do evento: ${event.tipo}</h2>
@@ -17,15 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>`
     })) // end of event fetch
 
-    bookForm.addEventListener('submit', (e) => {
+    clientForm.addEventListener('submit', (e) => {
         e.preventDefault()
 
         console.log(e.target)
 
-        const tipoInput = bookForm.querySelector('#tipo').value
-        const artistaInput = bookForm.querySelector('#artista').value
-        const dataInput = bookForm.querySelector('#data').value
-        const sessoesInput = bookForm.querySelector('#sessoes').value
+        const tipoInput = clientForm.querySelector('#tipo').value
+        const artistaInput = clientForm.querySelector('#artista').value
+        const dataInput = clientForm.querySelector('#data').value
+        const sessoesInput = clientForm.querySelector('#sessoes').value
 
         fetch(`${eventURL}`, {
             method: 'POST',

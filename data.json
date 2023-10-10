@@ -13,6 +13,23 @@
       "data": "2001-03-12",
       "sessoes": "sessoes2",
       "id": 2
+    },
+    {
+      "tipo": "tipo3",
+      "artista": "artista3",
+      "data": "1960-09-28",
+      "sessoes": "0",
+      "id": 3
+    }
+  ],
+  "clientes": [
+    {
+      "nome": "nome",
+      "endereco": "endereco",
+      "cpf": "cpf",
+      "nascimento": "nascimento",
+      "faturamento": "faturamento",
+      "id": 1
     }
   ]
 }
